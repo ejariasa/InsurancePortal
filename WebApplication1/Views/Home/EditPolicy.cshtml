@@ -1,0 +1,63 @@
+﻿@using InsurancePortal.Models
+@model PolicyViewModel
+@{
+    ViewData["Title"] = "EditPolicy";
+}
+
+<h4>Policy Form</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="EditPolicy">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <input type="hidden" asp-for="Policy.Id" />
+            <input type="hidden" asp-for="Policy.StartDate" />
+            <div class="form-group">
+                <label asp-for="Policy.Name" class="control-label"></label>
+                <input asp-for="Policy.Name" class="form-control" />
+                <span asp-validation-for="Policy.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+
+                <label asp-for="Policy.Description" class="control-label"></label>
+                <input asp-for="Policy.Description" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Policy.CoverageType" class="control-label"></label>
+                <select asp-for="Policy.CoverageType" asp-items="Model.CoverageTypeList" class="form-control-sm"></select>
+                <span asp-validation-for="Policy.CoverageType" class="text-danger"></span>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="Policy.Price" class="control-label"></label>
+                    <input asp-for="Policy.Price" class="form-control" type="number" />
+                    <span asp-validation-for="Policy.Price" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="Policy.CoveragePecentage" class="control-label"></label>
+                    <input asp-for="Policy.CoveragePecentage" class="form-control" type="number" />
+                    <span asp-validation-for="Policy.CoveragePecentage" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Policy.RiskType" class="control-label"></label>
+                <select asp-for="Policy.RiskType" asp-items="Model.RiskTypeList" class="form-control-sm"></select>
+                <span asp-validation-for="Policy.RiskType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Policy.CoveragePeriod" class="control-label"></label>
+                <input asp-for="Policy.CoveragePeriod" class="form-control" type="number" />
+                <span asp-validation-for="Policy.CoveragePeriod" class="text-danger"></span>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="submit" value="Submit" class="btn btn-primary btn-block" />
+                </div>
+                <div class="form-group col-md-6">
+                    <a asp-action="Index" class="btn btn-secondary btn-block"><i class="fa fa-table"></i> Back to List</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+

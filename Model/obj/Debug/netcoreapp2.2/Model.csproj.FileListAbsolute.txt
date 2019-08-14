@@ -1,0 +1,8 @@
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\Model\bin\Debug\netcoreapp2.2\Model.deps.json
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\Model\bin\Debug\netcoreapp2.2\Model.dll
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\Model\bin\Debug\netcoreapp2.2\Model.pdb
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\Model\obj\Debug\netcoreapp2.2\Model.csproj.CoreCompileInputs.cache
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\Model\obj\Debug\netcoreapp2.2\Model.AssemblyInfoInputs.cache
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\Model\obj\Debug\netcoreapp2.2\Model.AssemblyInfo.cs
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\Model\obj\Debug\netcoreapp2.2\Model.dll
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\Model\obj\Debug\netcoreapp2.2\Model.pdb

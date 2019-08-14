@@ -1,0 +1,57 @@
+﻿@using InsurancePortal.Models
+@model PolicyAssigmentViewModel
+@{
+    ViewData["Title"] = "AssignCustomer";
+}
+
+<h2>Assign Customer</h2>
+<div class="row">
+    <div class="col-md-12">
+        <h2> Policy: @Model.Name</h2>
+        <form asp-action="Assign" method="post">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th width="5%">
+
+                        </th>
+                        <th width="95%">Name</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (var item = 0; item < Model.Assigments.Count; item++)
+                    {
+                        <tr>
+                            <td width="5%" class="center">
+                                @Html.CheckBoxFor(m => @Model.Assigments[item].IsSelected, new { id = Html.NameFor(x => Model.Assigments[item].IsSelected) })
+                                <label for="@Html.NameFor(x => Model.Assigments[item].IsSelected)" class="checkbox-inline" style="color:transparent">.<span class="check"></span></label>
+                            </td>
+                            <td width="95%">@Model.Assigments[item].Customer.Name</td>
+
+                        </tr>
+
+                        @Html.HiddenFor(m => Model.Assigments[item].Customer.Id)
+                        @Html.HiddenFor(m => Model.Assigments[item].Customer.IdentifyNumber)
+                        @Html.HiddenFor(m => Model.Assigments[item].Id)
+                        @Html.HiddenFor(m => Model.Assigments[item].Policy.Id)
+
+                    }
+                </tbody>
+            </table>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="submit" value="Submit" class="btn btn-primary btn-block" />
+                </div>
+                <div class="form-group col-md-6">
+                    <a asp-action="Index" class="btn btn-secondary btn-block"><i class="fa fa-table"></i> Back to List</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+
+

@@ -1,0 +1,14 @@
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\BusinessServices\bin\Debug\netcoreapp2.2\BusinessServices.deps.json
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\BusinessServices\bin\Debug\netcoreapp2.2\BusinessServices.dll
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\BusinessServices\bin\Debug\netcoreapp2.2\BusinessServices.pdb
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\BusinessServices\bin\Debug\netcoreapp2.2\Model.dll
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\BusinessServices\bin\Debug\netcoreapp2.2\Repository.dll
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\BusinessServices\bin\Debug\netcoreapp2.2\Model.pdb
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\BusinessServices\bin\Debug\netcoreapp2.2\Repository.pdb
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\BusinessServices\obj\Debug\netcoreapp2.2\BusinessServices.csprojAssemblyReference.cache
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\BusinessServices\obj\Debug\netcoreapp2.2\BusinessServices.csproj.CoreCompileInputs.cache
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\BusinessServices\obj\Debug\netcoreapp2.2\BusinessServices.AssemblyInfoInputs.cache
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\BusinessServices\obj\Debug\netcoreapp2.2\BusinessServices.AssemblyInfo.cs
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\BusinessServices\obj\Debug\netcoreapp2.2\BusinessServices.csproj.CopyComplete
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\BusinessServices\obj\Debug\netcoreapp2.2\BusinessServices.dll
+C:\Users\earias\source\repos\InsurancePortal\WebApplication1\BusinessServices\obj\Debug\netcoreapp2.2\BusinessServices.pdb

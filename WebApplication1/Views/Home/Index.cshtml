@@ -1,0 +1,83 @@
+﻿
+@using Model.EntityModels;
+@model List<PolicyModel>
+@{
+    ViewData["Title"] = "Policies";
+}
+
+<div class="container">
+    <!-- Example row of columns -->
+    <h4>Policy Administration</h4>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Coverage Type
+                        </th>
+                        <th>
+                            Coverage Percentage
+                        </th>
+                        <th>
+                            Start Date
+                        </th>
+                        <th>
+                            Coverage Period
+                        </th>
+                        <th>
+                           Price
+                        </th>
+                        <th>
+                            Risk Type
+                        </th>
+                        <th>
+                            <a asp-action="AddPolicy" class="btn btn-outline-success"><i class="far fa-plus-square"></i>Add Policy</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CoverageType)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CoveragePecentage)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.StartDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CoveragePeriod)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Price)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.RiskType)
+
+                        </td>
+                        <td>
+                            <a asp-action="LoadPolicy" asp-route-id="@item.Id"><i class="fa fa-marker fa-lg"></i>Update</a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="text-danger ml-1" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash-alt fa-lg"></i>Delete</a>
+                            <a asp-action="AssignCustomer" asp-route-id="@item.Id" asp-route-name="@item.Name"><i class="fa fa-marker fa-lg"></i>Assing Customer</a>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr>
+
+</div>
